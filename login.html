@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dupamicaffeine - Login</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script  defer src="js/login.js"></script>
+
+</head>
+<body>
+    <!--login section cuando hagas click al boton de login te sale esta página -->
+  <div class="scroll__down">SCROLL DOWN
+    <i class="ri-arrow-down-circle-line"></i>
+  </div>
+<div class="container__login"></div>
+<div class="popup isActive">
+  <div class="popup__container flex-row">
+    <button class="icon__button close__button">
+      <i class="ri-close-large-fill"></i>
+    </button>
+    <div class="popup__left">
+      <h1 class="popup__title text--md">Login</h1>
+      <p class="popup__desc">Welcome back. Please sign in to your account.</p>
+      <div class="input__block">
+        <label for="email" class="input__label">Email</label>
+        <input type="email" name="email" id="email" placeholder="Email">
+      </div>
+      <div class="input__block">
+        <label for="password" class="input__label">Password</label>
+        <input type="password" name="password" id="password" placeholder="Password">
+      </div>
+      <div class="popup__buttons">
+        <a href="#">Forgot your password?</a>
+        <button class="input__button btn">Login</button>
+      </div>
+      <p class="sign-up">Don't have an account? <a href="registre.html">Register now</a></p>
+    </div>
+    <div class="popup__right">
+      <img src="assets/img/login.jpg" alt="image login">
+    </div>
+     <button class="icon__button close__button" type="button">
+     <i class="ri-close-large-line"></i>
+      </button>
+  </div>
+  <button class="popup__button">Click here to register</button>
+</div>
+  </body>
+</html>
