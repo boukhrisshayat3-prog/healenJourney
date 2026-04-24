@@ -5,7 +5,7 @@ export const datos = [
     titulo: "Connect with Others",
     parrafo: "Join a supportive community where you can share experiences and receive understanding from people on a similar journey.",
     botonTexto: "Join Now",
-    botonLink: "#"
+    botonLink: "contact.html"
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ export const datos = [
     titulo: "Supportive Community",
     parrafo: "Meet people who understand your journey and share experiences in a safe and supportive environment.",
     botonTexto: "Register",
-    botonLink: "#"
+    botonLink: "resource.html"
   },
   {
     id: 4,
@@ -22,7 +22,7 @@ export const datos = [
     titulo: "Expert Guidance",
     parrafo: "Access resources and guidance created by mental health professionals to help you feel supported.",
     botonTexto: "Get Help",
-    botonLink: "#"
+    botonLink: "professionals.html"
   },
   {
     id: 5,
@@ -30,7 +30,7 @@ export const datos = [
     titulo: "You Have a Family Here",
     parrafo: "You are not alone. Share your problems with people who care and are ready to support you.",
     botonTexto: "ver todo",
-    botonLink: "#"
+    botonLink: "resource.html"
   },
   {
     id: 6,
@@ -38,7 +38,7 @@ export const datos = [
     titulo: "Support Groups",
     parrafo: "Find a safe place to share, heal, and connect through expert and peer-led sessions.",
     botonTexto: "View All",
-    botonLink: "#"
+    botonLink: "resource.html"
   },
   {
     id: 7,
@@ -46,6 +46,6 @@ export const datos = [
     titulo: "You Are Not Alone",
     parrafo: "Whenever you feel overwhelmed, remember our team is here to listen and support you 24/7.",
     botonTexto: "Contact Us Now",
-    botonLink: "#"
+    botonLink: "contact.html"
   }
 ];

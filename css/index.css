@@ -338,6 +338,8 @@ header{
             min-width: 15rem;
             & span{
                 padding: var(--s-sm);
+                align-self: flex-start;
+                text-align: start;
             }
             & i{
                 background-color: var(--c-secondary);
@@ -354,6 +356,11 @@ header{
 
         }
     }
+}
+
+.about__content{
+    align-items: center;
+    text-align: center;
 }
 /*/section__about*/
 /*section__hero*/
@@ -674,6 +681,33 @@ header{
  }
 }
 
+/*banner-page*/
+.banner__page{
+    color: var(--c-light);
+    max-width: var(--mw-xl);
+    margin: auto;
+    
+    & .banner-page__background{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url('../assets/img/about.jpg');
+
+        background-position:center ;
+        background-repeat:no-repeat ;
+        background-size:cover ;
+        min-height: 80vh;
+        border-radius: var(--r-sm);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* o podemos poner un dispaly colmn y un align item stretsh*/
+        & .banner-page__block{
+            width: 100%;
+            align-items: center;
+            }
+            
+        }
+     }
+
 /*modal login*/
 
 .container__login, .container__register {
@@ -682,6 +716,8 @@ header{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  max-width: var(--mw-xl);
+  margin: 0 auto;
 }
 
 .popup {
@@ -1024,6 +1060,83 @@ header{
 .cta__button:hover {
     background-color: var(--c-hover);
     color: var(--c-light);
+}
+
+/* Contact form style (based on register) */
+.contact-form {
+    max-width: 45rem;
+    margin: 0 auto;
+    padding: 3rem 1.875rem 1.25rem;
+    background: #fff;
+    border-radius: 0.625rem;
+    border: 1px solid #ddd;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    align-items: center;
+}
+
+.contact-form .input__label {
+    font-size: 0.6875rem;
+    text-transform: uppercase;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+    color: #8c7569;
+    transition: 0.3s;
+}
+
+.contact-form .form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 40rem;
+    padding: 0.625rem 0.625rem 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+    margin-bottom: 1.25rem;
+    transition: 0.3s;
+}
+
+.contact-form .form-group:focus-within {
+    border-color: #8c7569;
+}
+
+.contact-form .form-group:focus-within .input__label {
+    color: rgba(140, 117, 105, 0.8);
+}
+
+.contact-form .form-group--inline {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.625rem;
+    border: 0;
+    padding: 0;
+}
+
+.contact-form .form-group--inline input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+}
+
+.contact-form .form-group--inline label {
+    margin: 0;
+    font-size: 0.9375rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    outline: 0;
+    border: 0;
+    padding: 0.6rem 0 0.2rem;
+    font-size: 1rem;
+    font-family: "Nunito", sans-serif;
+    background: transparent;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 6rem;
 }
 
 
