@@ -6,7 +6,7 @@
     <title>Dupamicaffeine</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script  type="module" defer src="js/index.js"></script>
+    <script  type="module"  src="js/index.js"></script>
 
 </head>
 <body>
@@ -42,7 +42,7 @@
             <ul class="nav flex-row body" id="isActive">
                 <video autoplay muted loop style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
                     <source src="assets/videos/backMenu.mp4" type="video/mp4">
-                </video>                <button class="close-menu"><i class="ri-close-line"></i></button>
+                </video>                <li><button class="close-menu" type="button" aria-label="Close menu"><i class="ri-close-line"></i></button></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="professionals.html">Professionals</a></li>
                 <li><a href="resource.html">Community</a></li>
@@ -55,7 +55,7 @@
         
         <ul class="flex-row">
             <li><a href="#" id="theme-toggle"><i class="ri-contrast-2-line"></i></a></li>
-            <button class="hamburger" id="hamburger"><i class="ri-menu-line"></i></button>
+            <li><button class="hamburger" id="hamburger" type="button" aria-label="Open menu"><i class="ri-menu-line"></i></button></li>
         </ul>
         </div>
         </div>
@@ -67,6 +67,7 @@
       <main>
            <!--slider section-->
         <section class="section__slider container">
+            <h2 hidden>Featured content slider</h2>
 
            
             <div id="slider__container" class="slider__container">
@@ -113,7 +114,6 @@
             <div class="hero__container container  flex-row">
                 <div class="hero__image flex-row">
                     <picture>
-                        <source srcset="" type="image/svg+xml">
                         <img src="assets/img/monitor-hero.png" alt="Mentor connection illustration">
                     </picture>
                     <span class="round">Best For You</span>
@@ -143,7 +143,6 @@
             <div class="community__cards flex-row">
                  <div class="card">
                     <picture>
-                        <source srcset="" type="image/svg+xml">
                         <img src="assets/img/community4.png" alt="Morning meditation illustration">
                     </picture>
                     <h3 class="text--sm">Morning Meditation</h3>
@@ -152,7 +151,6 @@
 
                 <div class="card ">
                     <picture>
-                        <source srcset="" type="image/svg+xml">
                         <img src="assets/img/community1.png" alt="Journaling practice illustration">
                     </picture>
                     <h3 class="text--sm">The Power of Journaling</h3>
@@ -162,7 +160,6 @@
 
                 <div class="card">
                     <picture>
-                        <source srcset="" type="image/svg+xml">
                         <img src="assets/img/community3.png" alt="Understanding triggers illustration">
                     </picture>
                     <h3 class="text--sm">Understanding Triggers</h3>
@@ -171,7 +168,6 @@
                 
                 <div class="card">
                     <picture>
-                        <source srcset="" type="image/svg+xml">
                         <img src="assets/img/community2.png" alt="Stories of hope illustration">
                     </picture>
                     <h3 class="text--sm">Stories of Hope</h3>
@@ -190,13 +186,12 @@
                 <h3 class="text--lg">Ready to start your journey?</h3>
                 <p>Create an account today to access our full library of resources, join support groups, and begin your healing process in a safe, anonymous environment.</p>
                 <div class="buttons flex-row">
-                <button class="btn btn--black body" href="registre.html">Register Now</button> 
-                <button class="btn btn--black body" href="contact.html">Contact Support</button> 
+                <a class="btn btn--black body" href="registre.html">Register Now</a>
+                <a class="btn btn--black body" href="contact.html">Contact Support</a>
                 </div>
                 </div>
                 <div class="acount__image">
                     <picture>
-                        <source srcset="" type="image/svg+xml">
                         <img src="assets/img/acount.png" alt="User account registration illustration">
                     </picture>
 

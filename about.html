@@ -6,7 +6,7 @@
     <title>About Us - Healen Journey</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script type="module" defer src="js/index.js"></script>
+    <script type="module" src="js/index.js"></script>
 </head>
 <body>
     <!--header section-->
@@ -38,7 +38,7 @@
                 <video autoplay muted loop style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
                     <source src="assets/videos/backMenu.mp4" type="video/mp4">
                 </video>
-                <button class="close-menu"><i class="ri-close-line"></i></button>
+                <li><button class="close-menu" type="button" aria-label="Close menu"><i class="ri-close-line"></i></button></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="professionals.html">Professionals</a></li>
                 <li><a href="resource.html">Community</a></li>
@@ -51,7 +51,7 @@
         
         <ul class="flex-row">
             <li><a href="#" id="theme-toggle"><i class="ri-contrast-2-line"></i></a></li>
-            <button class="hamburger" id="hamburger"><i class="ri-menu-line"></i></button>
+            <li><button class="hamburger" id="hamburger" type="button" aria-label="Open menu"><i class="ri-menu-line"></i></button></li>
         </ul>
         </div>
         </div>
@@ -102,7 +102,6 @@
             <div class="hero__container container flex-row">
                 <div class="hero__image flex-row">
                     <picture>
-                        <source srcset="" type="image/svg+xml">
                         <img src="assets/img/ourstory.jpg" alt="Our Story">
                     </picture>
                 </div>
