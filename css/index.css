@@ -908,12 +908,13 @@ header{
   font-size: 32px;
   font-weight: 800;
   transform: translate(-50%, -50%);
-}
-.scroll__down i {
+  i {
   margin-top: 16px;
   width: 52px;
   fill: currentColor;
+  }
 }
+
 
 /* About section */
 .section {
@@ -962,34 +963,41 @@ header{
     background-color: var(--c-light);
     border-radius: var(--r-sm);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.pillar__image {
+    & .pillar__image {
     gap: var(--s-sm);
     margin-bottom: var(--s-md);
-}
-
-.pillar__image img {
+    &  img {
     width: 48%;
     height: auto;
     border-radius: var(--r-sm);
 }
 
-.pillar p {
+
+}
+&p {
     color: var(--c-body);
     line-height: 1.6;
 }
+
+}
+
+
+
+
+
+
 }
 }
 /* Pillars section */
 .pillars {
     margin-top: var(--s-lg);
-}
-
-.pillars h3 {
+    & h3 {
     color: var(--c-secondary);
     margin-bottom: var(--s-md);
 }
+}
+
+
 
 .pillar {
     margin-bottom: var(--s-lg);
@@ -1315,34 +1323,38 @@ header{
   --c-secondary: #4a4a4a;
   --c-body: #cccccc;
   --c-hover: #666666;
-}
-
-.dark body {
+  & body {
   background-color: var(--c-primary);
   color: var(--c-text);
 }
-
-.dark .nav {
+& .nav {
   background-color: rgba(0, 0, 0, 0.9);
 }
-
-.dark .slider__info {
+& .slider__info {
   background-color: rgba(0, 0, 0, 0.7);
 }
-
-.dark .card {
+&  .card {
   background-color: var(--c-light);
 }
-
-.dark .account {
+& .account {
   background-color: var(--c-primary);
 }
-
-.dark .footer {
+& .footer {
   background-color: var(--c-secondary);
   color: var(--c-light);
 }
-
-.dark h1, .dark h2, .dark h3, .dark p, .dark span, .dark li a {
+& h1, .dark h2, .dark h3, .dark p, .dark span, .dark li a {
   color: #ffffff;
 }
+}
+
+
+
+
+
+
+
+
+
+
+
