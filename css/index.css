@@ -970,7 +970,7 @@ header{
     gap: var(--s-sm);
     margin-bottom: var(--s-md);
     &  img {
-    width: 48%;
+    width: 100%;
     height: auto;
     border-radius: var(--r-sm);
 }
@@ -1015,8 +1015,12 @@ header{
     margin-bottom: var(--s-md);
 }
 
+.pillar__image picture {
+    flex: 1 1 21.875rem;
+}
+
 .pillar__image img {
-    width: 48%;
+    width: 100%;
     height: auto;
     border-radius: var(--r-sm);
 }
